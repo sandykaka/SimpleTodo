@@ -13,6 +13,7 @@ The following functionality is completed:
 * [ ] User can **successfully add and remove items** from the todo list
 * [ ] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list.
 * [ ] User can **persist todo items** and retrieve them properly on app restart
+* [ ] Added suggestions. e.g. use SQLite, customAdapter, etc.
 
 
 ## Video Walkthrough
@@ -20,7 +21,7 @@ The following functionality is completed:
 Here's a walkthrough of implemented user stories:
 
 
-<img src='simpletodo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='todoApp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 ## License
