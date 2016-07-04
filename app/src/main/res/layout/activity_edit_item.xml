@@ -1,23 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" android:background="#c9d8e7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Edit Item Below: "
-        android:textSize="30sp"/>
+        android:text="Task"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:padding="@dimen/activity_vertical_margin"
+        android:textSize="20sp"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextEditItem" />
+        android:id="@+id/editTextEditItem"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Priority"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:padding="@dimen/activity_vertical_margin"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/spinnerPriority"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:dropDownSelector="@android:color/darker_gray"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Due date"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewDate"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textStyle="italic"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pick date"
+            android:onClick="showDatePickerDialog"
+            android:textColor="@android:color/black"
+            android:background="@android:drawable/btn_default"/>
+
+    </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"
         android:layout_gravity="center"
-        android:onClick="onClickSave"/>
+        android:onClick="onClickSave"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:background="@android:drawable/btn_default"/>
 </LinearLayout>

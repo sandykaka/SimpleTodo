@@ -1,8 +1,12 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@android:color/holo_blue_bright</item>
+        <item name="colorPrimary">@android:color/holo_blue_dark</item>
     </style>
-
+    <style name="splashScreenTheme" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/holo_blue_dark</item>
+    </style>
 </resources>
